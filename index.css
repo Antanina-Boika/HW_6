@@ -2,10 +2,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-p li {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: small;
+
+.div_size {
+  position: relative;
+  max-width: 75vw;
+  margin: 0 auto;
+  margin-top: 130px;
 }
 
 .title1 {
@@ -21,12 +23,11 @@ p li {
 }
 
 .title3 {
- margin: 20px 40px;
+  margin: 20px 40px;
 }
 
 .list {
   margin: 0px 40px;
-
 }
 .list_first li:nth-child(even) {
   text-decoration: underline;
@@ -34,15 +35,28 @@ p li {
   color: rgba(3, 41, 53, 0.755);
 }
 
-.list_second li:nth-child(odd)
-   {
+.list_second li:nth-child(odd) {
   text-decoration: underline;
   text-decoration-style: dashed;
   color: rgba(58, 58, 58, 0.762);
 }
 
+.list_third li:nth-child(3n) {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  color: rgba(34, 74, 34, 0.831);
+}
+
 .blue_title {
   color: rgba(3, 41, 53, 0.755);
+}
+
+.green_title {
+  color: rgba(34, 74, 34, 0.831);
+}
+
+.gray_title {
+  color: rgba(58, 58, 58, 0.762);
 }
 
 .charlotte {
@@ -60,34 +74,23 @@ p li {
   border-bottom: 3px dashed;
   border-left: 3px dashed;
   border-right: 3px solid;
-  border-color:rgba(58, 58, 58, 0.762);
-  }
+  border-color: rgba(58, 58, 58, 0.762);
+  margin-top: 90px;
+}
 
-  .gray_title {
-    color: rgba(58, 58, 58, 0.762);  
-  }
-  
-
-.div_size {
-  position: relative;
-  max-width: 65vw;
-  margin: 0 auto;
-  margin-top: 100px;
+.cookies {
+  background-color: rgba(143, 188, 143, 0.618);
+  border-top: 3px solid;
+  border-bottom: 3px dashed;
+  border-left: 3px dashed;
+  border-right: 3px solid;
+  border-color: rgba(34, 74, 34, 0.831);
 }
 
 .description {
   margin: 0px 40px;
 }
 
-.finale {
-  margin: 0 auto;
-}
-
-.hr-line {
-  border: none;
-  width: 1px;
-  color: black;
-}
 .description_charlotte:first-letter {
   color: rgba(3, 41, 53, 0.755);
   font-weight: bolder;
@@ -100,27 +103,39 @@ p li {
   color: rgba(58, 58, 58, 0.762);
   font-weight: bolder;
   font-size: xx-large;
-  }
+}
+
+.description_cookies:first-letter {
+  color: rgba(34, 74, 34, 0.831);
+  font-weight: bolder;
+  font-size: xx-large;
+}
 
 .image_size {
   position: absolute;
-  width: 250px;
-  box-shadow: 0px 0px 0px 4px rgba(3, 41, 53, 0.755);
+  width: 300px;
+  height: 200px;
   left: 85%;
-  bottom: 90%;
+  bottom: 89%;
+}
+.image_border_charlotte {
+  border: 4px solid;
+  border-color: rgba(3, 41, 53, 0.755);
+}
+
+.image_border_tiramisu {
+  border: 4px solid; 
+  border-color: rgba(58, 58, 58, 0.762);
+}
+
+.image_border_cookies {
+ border: 4px solid;
+ border-color: rgba(34, 74, 34, 0.831);
 }
 
 .finale {
   font-style: italic;
-  margin-bottom: 20px;
   text-align: center;
-}
-
-.hr {
-  margin: 0 auto;
-  padding: 0;
-  height: 0;
-  border: none;
-  border-top: 1px solid rgb(8, 8, 8);
-  margin-top: 40px;
+  text-decoration: overline;
+  margin: 70px 30px 20px 30px;
 }
